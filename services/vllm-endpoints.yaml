@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: vllm
+  namespace: default
+subsets:
+  - addresses:
+      - ip: 10.0.9.2     
+    ports:
+      - port: 8000
+
